@@ -1361,7 +1361,7 @@ KisCompositeOpComboBox KisCategorizedListView::item {
 */
 
 QStackedWidget > QScrollArea {
-	background-image: url(stylesheet:images/stylesheet:images/autumn-bg_007.png);
+	background-image: url(stylesheet:images/autumn-bg_007.png);
 	background-repeat: repeat-x;
 	background-position: bottom left;
 }
