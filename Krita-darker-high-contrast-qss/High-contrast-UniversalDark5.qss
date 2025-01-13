@@ -420,6 +420,8 @@ QPushButton::default{
 	border-width: 2px;
 	border-color: QPalette.ButtonText;
 	background-color: QPalette.Highlight; /* force.QPalette.Highlight */
+	/*background: qlineargradient(x0:0, y0:1, x1:0, y1:1,
+                stop:0 QPalette.Highlight, stop:1 QPalette.Highlight(1.16));*/ /*Gradient test*/
 }
 
 QPushButton::default:hover{
@@ -576,7 +578,7 @@ QToolBar QWidget KisCompositeOpComboBox {
 	margin-top: 1px;
 	margin-left: 8px;
 	margin-right: 0px;
-	max-height: 23px;
+/*	max-height: 23px;*/
 	max-width: 224px;
 }
 
@@ -683,7 +685,12 @@ QDockWidget KisPopupButton {
 	border-style: solid;
 	border-radius: 6px;
 	font-size: 12px;
+/*	min-height: 17px;*/
 }
+/*
+QDockWidget KisTagToolButton QToolButton {
+	min-height: 17px;
+}*/
 
 QDockWidget KisPopupButton:hover {
     border-color: QPalette.ButtonText(0.89); /* force.QPalette.ButtonText */
@@ -839,8 +846,8 @@ QComboBox {
 	padding-left: 8px;
 	padding-right: 8px;
     min-width: 50px;
-	min-height: 20px;
-	max-height: 22px;
+	min-height: 21px;
+	max-height: 21px;
 	margin-left: 4px;
 	margin-right: 4px;
 	margin-bottom: 4px;
@@ -857,6 +864,7 @@ QComboBox:disabled {
 KisWidgetChooser QComboBox {
 	margin-left: 3px;
 	margin-right: 3px;
+	max-width: 50px;
 }
 
 QComboBox::hover {
@@ -867,12 +875,14 @@ QComboBox::hover {
 
 
 QComboBox::drop-down {
-    width: 20px;
+    width: 19px;
 	margin: 1px;
 	padding: -1px;
-    border: 1px solid QPalette.Highlight(1.70);
+    border: 1px solid QPalette.Highlight(1.60);
     border-radius: 5px;
 	background-color: QPalette.Highlight; /* force.QPalette.Highlight */
+	/*background: qlineargradient(x0:0, y0:1, x1:0, y1:1,
+                stop:0 QPalette.Highlight, stop:1 QPalette.Highlight(1.16));*/ /* Gradient test*/
 }
 
 QComboBox::drop-down:disabled {
@@ -914,6 +924,7 @@ QComboBox QAbstractItemView {
 	padding-top: -4px;
 	padding-bottom: -2px;
 	margin-bottom: 6px;
+	max-width: 267px;
 }
 
 KisWidgetChooser:hover {
@@ -1111,13 +1122,13 @@ QCheckBox::indicator:unchecked:hover, QGroupBox::indicator:unchecked:hover, QLis
 }
 
 QCheckBox::indicator:unchecked:pressed, QGroupBox::indicator:unchecked:pressed, QListView::indicator:unchecked:pressed, QMenu::indicator:unchecked:pressed {
-	border-color: QPalette.WindowText(0.86);
+	border-color: QPalette.ButtonText(0.86);
 	background-color: QPalette.Highlight(0.97);
 }
 
 QCheckBox::indicator:checked, QGroupBox::indicator:checked, QListView::indicator:checked, QMenu::indicator:checked {
-	border-color: QPalette.WindowText(0.86);
-	background-color: QPalette.Highlight(0.40);
+	border-color: QPalette.ButtonText(0.86);
+	background-color: QPalette.Highlight(0.50);
     image: url(stylesheet:images/checkmark-light-grey.svg);
 }
 
@@ -1127,8 +1138,8 @@ QCheckBox::indicator:checked:hover, QGroupBox::indicator:checked:hover, QListVie
 }
 
 QCheckBox::indicator:checked:pressed, QGroupBox::indicator:checked:pressed, QListView::indicator:checked:pressed, QMenu::indicator:checked:pressed {
-	border-color: QPalette.WindowText(0.86);
-	background-color: QPalette.Highlight(0.25);
+	border-color: QPalette.ButtonText(0.86);
+	background-color: QPalette.Highlight(0.97);
     image: url(stylesheet:images/checkmark-light-grey.svg);
 }
 
@@ -1252,6 +1263,16 @@ QFrame[frameShape="5"] {
 	padding: 0;
 	background-color: QPalette.Highlight(0.86);
 }
+
+/* -----------------------------------
+	Etc
+   -----------------------------------
+*/
+/*
+.KisAnimTimelineTimeHeader {
+	font-size: 28px;
+}*/
+
 
 /* -----------------------------------
 	Search box
