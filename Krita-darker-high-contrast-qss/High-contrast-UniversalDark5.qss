@@ -1160,7 +1160,13 @@ QGroupBox, QDockWidget .QGroupBox {
     background-color: QPalette.Window(0.95);
     border: 1px solid QPalette.ToolTipBase(1.85); /* force.QPalette.ToolTipBase */
     border-radius: 4px;
+
+	/* Windows */
+/*    margin-top: 10ex; */
+
+	/* macOS, Linux */
     margin-top: 4ex;
+
 	margin-bottom: 4px;
 	margin-left: 8px;
 	margin-right: 4px;
@@ -1183,7 +1189,7 @@ QGroupBox::disabled {
 QGroupBox::title {
 	subcontrol-origin: margin;
 	subcontrol-position: top left;
-	padding: 8 2px;
+	padding: 8px 2px;
 	background: transparent;
 }
 
@@ -1326,19 +1332,18 @@ PresetDockerDock QFrame#KisPopupButtonFrame, KisPaintOpPresetsChooserPopup QFram
 	margin: 0px;
 }
 
-/* macOS */
+/* macOS, Windows */
 QDockWidget#KisLayerBox QMenu {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
 
-/* macOS */
+/* macOS, Windows */
 QDockWidget#KisLayerBox QMenu KisColorLabelSelectorWidgetMenuWrapper, QDockWidget#KisLayerBox QMenu KisColorLabelSelectorWidget {
 	max-height: 32px;
 	padding: 3px;
 }
 
-/* macOS */
 QMenu::item {
 	padding-left: 12px;
 	padding-right: 12px;
@@ -1350,15 +1355,18 @@ QMenu::item {
 /*QDockWidget#KisLayerBox QMenu::item {
 	padding-left: 2px;
 }*/
+
 /* linux */
 /*QDockWidget#KisLayerBox QMenu QMenu::item {
 	padding-left: 2px;
 }*/
 
+/* macOS, Windows */
 QDockWidget#KisLayerBox QMenu::item {
 	padding-left: -8px;
 }
 
+/* macOS, Windows */
 QDockWidget#KisLayerBox QMenu QMenu::item {
 	padding-left: 8px;
 }
