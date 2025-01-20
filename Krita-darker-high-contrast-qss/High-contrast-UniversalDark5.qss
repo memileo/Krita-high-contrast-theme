@@ -487,6 +487,10 @@ WdgDlgBundleManager QPushButton#bnNew {
 	min-width: 100px;
 }
 
+/* Windows - fix cancel button cutoff on new image from clipboard dialog */
+KisImageFromClipboardWidget QDialogButtonBox#newDialogConfirmationButtonBox .QPushButton {
+	min-width: 36px;
+}
 
 /* -----------------------------------
 	Toolbar
@@ -1334,7 +1338,7 @@ PresetDockerDock QFrame#KisPopupButtonFrame, KisPaintOpPresetsChooserPopup QFram
 	margin: 0px;
 }
 
-/* macOS, Windows */
+
 QDockWidget#KisLayerBox QMenu {
 	margin-top: 0px;
 	margin-bottom: 0px;
