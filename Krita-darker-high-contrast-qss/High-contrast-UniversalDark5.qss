@@ -10,7 +10,7 @@ QPalette.HighlightedText: rgb(255, 255, 255)
 QPalette.ToolTipBase: rgb(80, 80, 80)
 */
 /*QMainWindow:!active {
-	background: QPalette.Button(1.07);
+	background: QPalette.Button(l: 1.07);
 }*/
 
 /* -----------------------------------
@@ -19,17 +19,17 @@ QPalette.ToolTipBase: rgb(80, 80, 80)
 */
 
 /*QMdiArea {
-	border: 1px solid QPalette.ButtonText(0.89)b5;
+	border: 1px solid QPalette.ButtonText(l: 0.89)b5;
 	border-radius: 2px;
 	padding: 1px;
 }*/
 
 /*QMdiArea QAbstractScrollArea {
-	border: 1px solid QPalette.ButtonText(0.62);
+	border: 1px solid QPalette.ButtonText(l: 0.62);
 }*/
 
 QMdiSubWindow {
-/*    border: 1px solid QPalette.ButtonText(0.89)f2;*/
+/*    border: 1px solid QPalette.ButtonText(l: 0.89)f2;*/
 	border: 3px solid QPalette.Window;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
@@ -53,14 +53,14 @@ QMdiSubWindow QObject:focus {
 }*/
 
 QMdiSubWindow::title {
-	background-color: QPalette.ToolTipBase(0.86);
+	background-color: QPalette.ToolTipBase(l: 0.86);
 	selection-background-color: orange;
-	border-bottom: 3px solid QPalette.ButtonText(0.84);
+	border-bottom: 3px solid QPalette.ButtonText(l: 0.84);
 	border-radius: 0px;
 	height: 12px;
 	padding: 6px;
 	margin: -3px;
-	color: QPalette.Highlight(0.00);
+	color: QPalette.Highlight(l: 0.00);
 	image: url();
 }
 
@@ -71,9 +71,9 @@ QMdiSubWindow:maximized, QMdiSubWindow::title:maximized {
 }
 
 QMdiSubWindow::close-button, QMdiSubWindow::minimize-button, QMdiSubWindow::maximize-button, QMdiSubWindow::normal-button {
-   /* background: QPalette.Highlight(1.45);*/
-	background: QPalette.ToolTipBase(0.86);
-	border: 1px solid QPalette.ToolTipBase(0.86);
+   /* background: QPalette.Highlight(l: 1.45);*/
+	background: QPalette.ToolTipBase(l: 0.86);
+	border: 1px solid QPalette.ToolTipBase(l: 0.86);
 	width: 11px;
 	height: 11px;
 	padding: 2px;
@@ -93,12 +93,12 @@ QMdiSubWindow::close-button:maximized, QMdiSubWindow::minimize-button:maximized,
 }
 
 QMdiSubWindow::close-button:hover, QMdiSubWindow::minimize-button:hover, QMdiSubWindow::maximize-button:hover, QMdiSubWindow::normal-button:hover {
-/*    border-color: QPalette.ButtonText(0.89);*/
-	background: QPalette.Window(1.64);
+/*    border-color: QPalette.ButtonText(l: 0.89);*/
+	background: QPalette.Window(l: 1.64);
 }
 
 QMdiSubWindow::close-button:pressed, QMdiSubWindow::minimize-button:pressed, QMdiSubWindow::maximize-button:pressed, QMdiSubWindow::normal-button:pressed {
-    background: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+    background: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 }
 
 /* -----------------------------------
@@ -111,13 +111,13 @@ QTabBar {
 }
 
 QTabWidget::pane {
-    border: 1px solid QPalette.ToolTipBase(1.85);
+    border: 1px solid QPalette.ToolTipBase(l: 1.85);
 	border-radius: 4px;
     position: absolute;
     top: -16px;
 	bottom: 4px;
 	padding-top: 16px;
-	background-color: QPalette.Button(1.04);
+	background-color: QPalette.Button(l: 1.04);
 }
 
 QTabWidget::tab-bar {
@@ -127,8 +127,8 @@ QTabWidget::tab-bar {
 QTabBar::tab {
 	border-style: solid;
 	border-color: transparent;
-	color: QPalette.WindowText(1.09); /* force.QPalette.WindowText */
-	background-color: QPalette.Window(1.68); /* force.QPalette.Window */
+	color: QPalette.WindowText(l: 1.09); /* force.QPalette.WindowText */
+	background-color: QPalette.Window(l: 1.68); /* force.QPalette.Window */
 	font-size: 11px;
 	padding-left: 4px;
 	padding-right: 4px;
@@ -163,24 +163,24 @@ QTabBar::tab:middle {
 }
 
 QTabBar::tab:selected, QTabBar::tab:last:selected {
-	border-color: QPalette.ButtonText(0.96); /* force.QPalette.ButtonText */
+	border-color: QPalette.Highlight(l: 2.00, s: 2.4, h:5); /* force.QPalette.ButtonText */
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 6px;
-	color: QPalette.HighlightedText(0.00);
-	background-color: QPalette.Highlight(1.40); /* force.QPalette.Highlight */
+	color: QPalette.HighlightedText(l: 0.00);
+	background-color: QPalette.Highlight(l: 1.50, s: 1.1); /* force.QPalette.Highlight */
 }
 
 QTabBar::tab:hover, QTabBar::tab:last:hover {
-	color: QPalette.ButtonText(0.96); /* force.QPalette.ButtonText */
+	color: QPalette.ButtonText(l: 0.96); /* force.QPalette.ButtonText */
 }
 
 QTabBar::tab:selected:hover {
-	color: QPalette.Button(0.89);
+	color: QPalette.Button(l: 0.89);
 }
 
 QTabBar::tab:pressed, QTabBar::tab:last:pressed {
-	color: QPalette.HighlightedText(0.00);
+	color: QPalette.HighlightedText(l: 0.00);
 	font-size: 10px;
 	padding-bottom: 2px;
 }
@@ -200,9 +200,9 @@ QMdiArea > QTabBar::tab {
 	margin-top: 0px;
 	padding-bottom: 6px;
 	padding-top: 4px;
-	background-color: QPalette.Window(0.65); /* force.QPalette.Window */
-	border: 1px solid QPalette.ButtonText(0.62); /* force.QPalette.ButtonText */
-	color: QPalette.ButtonText(0.68); /* force.QPalette.ButtonText */
+	background-color: QPalette.Window(l: 0.65); /* force.QPalette.Window */
+	border: 1px solid QPalette.ButtonText(l: 0.62); /* force.QPalette.ButtonText */
+	color: QPalette.ButtonText(l: 0.68); /* force.QPalette.ButtonText */
 }
 
 QMdiArea > QTabBar::tab:only-one {
@@ -213,12 +213,12 @@ QMdiArea > QTabBar::tab:only-one {
 }
 
 QMdiArea > QTabBar::tab:selected, QMdiArea > QTabBar::tab:middle:selected {
-	border-left: 1px solid QPalette.ButtonText(0.62); /* force.QPalette.ButtonText */
-	border-bottom: 1px solid QPalette.ButtonText(0.62); /* force.QPalette.ButtonText */
-	border-right: 1px solid QPalette.ButtonText(0.62); /* force.QPalette.ButtonText */
+	border-left: 1px solid QPalette.ButtonText(l: 0.62); /* force.QPalette.ButtonText */
+	border-bottom: 1px solid QPalette.ButtonText(l: 0.62); /* force.QPalette.ButtonText */
+	border-right: 1px solid QPalette.ButtonText(l: 0.62); /* force.QPalette.ButtonText */
 	border-top: 0px;
 	border-radius: 0px;
-	color: QPalette.ButtonText(0.96); /* force.QPalette.ButtonText */
+	color: QPalette.ButtonText(l: 0.96); /* force.QPalette.ButtonText */
 	background-color: QPalette.Window; /* force.QPalette.Window */
 	padding-bottom: 6px;
 	padding-top: 5px;
@@ -226,23 +226,23 @@ QMdiArea > QTabBar::tab:selected, QMdiArea > QTabBar::tab:middle:selected {
 
 QMdiArea > QTabBar::tab:first:selected {
 	border-left: 0px;
-	border-bottom: 1px solid QPalette.ButtonText(0.62); /* force.QPalette.ButtonText */
-	border-right: 1px solid QPalette.ButtonText(0.62); /* force.QPalette.ButtonText */
+	border-bottom: 1px solid QPalette.ButtonText(l: 0.62); /* force.QPalette.ButtonText */
+	border-right: 1px solid QPalette.ButtonText(l: 0.62); /* force.QPalette.ButtonText */
 	border-top: 0px;
 	border-radius: 0px;
 	padding-left: 9px;
-	color: QPalette.ButtonText(0.96); /* force.QPalette.ButtonText */
+	color: QPalette.ButtonText(l: 0.96); /* force.QPalette.ButtonText */
 	background-color: QPalette.Window; /* force.QPalette.Window */
 }
 
 QMdiArea > QTabBar::tab:last:selected {
-	border-left: 1px solid QPalette.ButtonText(0.62); /* force.QPalette.ButtonText */
-	border-bottom: 1px solid QPalette.ButtonText(0.62); /* force.QPalette.ButtonText */
+	border-left: 1px solid QPalette.ButtonText(l: 0.62); /* force.QPalette.ButtonText */
+	border-bottom: 1px solid QPalette.ButtonText(l: 0.62); /* force.QPalette.ButtonText */
 	border-right: 0px;
 	border-top: 0px;
 	border-radius: 0px;
 	padding-right: 9px;
-	color: QPalette.ButtonText(0.96); /* force.QPalette.ButtonText */
+	color: QPalette.ButtonText(l: 0.96); /* force.QPalette.ButtonText */
 	background-color: QPalette.Window; /* force.QPalette.Window */
 }
 
@@ -269,21 +269,21 @@ QMdiArea > QTabBar::tab:middle {
 	margin-right: -1px;
 	padding-left: 8px;
 	padding-right: 8px;
-	border-top: 1px solid QPalette.ButtonText(0.62); /* force.QPalette.ButtonText */
+	border-top: 1px solid QPalette.ButtonText(l: 0.62); /* force.QPalette.ButtonText */
 }
 
 QMdiArea > QTabBar::tab:hover {
-	color: QPalette.ButtonText(0.96); /* force.QPalette.ButtonText */
-	background-color: QPalette.Window(1.36); /* force.QPalette.Window */
+	color: QPalette.ButtonText(l: 0.96); /* force.QPalette.ButtonText */
+	background-color: QPalette.Window(l: 1.36); /* force.QPalette.Window */
 }
 
 QMdiArea > QTabBar::tab:selected:hover, QMdiArea > QTabBar::tab:first:selected:hover, QMdiArea > QTabBar::tab:last:selected:hover {
-	color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 	background: QPalette.Window; /* force.QPalette.Window */
 }
 
 QMdiArea > QTabBar::tab:pressed, QMdiArea > QTabBar::tab:last:pressed, QMdiArea > QTabBar::tab:first:pressed {
-	color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 	font-size: 11px;
 	padding-bottom: 6px;
 	padding-top: 5px;
@@ -304,18 +304,18 @@ QMdiArea > QTabBar::close-button {
 
 KoGroupButton {
 /*	background-style: solid;*/
-	background-color: QPalette.Button(2.09);
+	background-color: QPalette.Button(l: 2.09);
 	border-radius: 4px;
 }
 
 KoGroupButton::checked {
-	background-color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	background-color: QPalette.ButtonText(l: 1.09, s: 1.8); /* force.QPalette.ButtonText */
 /*	background-style: solid;*/
-	color: QPalette.HighlightedText(0.00);
+	color: QPalette.HighlightedText(l: 0.00);
 }
 
 KisPaintOpPresetsEditor QToolButton {
-	border-color: QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 6px;
@@ -326,13 +326,13 @@ KisPaintOpPresetsEditor QToolButton {
 }
 
 KisPaintOpPresetsEditor QToolButton:hover {
-	border-color: QPalette.ButtonText(0.89);
-	color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 0.89);
+	color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 }
 
 KisPaintOpPresetsEditor QToolButton:pressed {
-	background-color: QPalette.Button(2.09);
-	border-color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	background-color: QPalette.Button(l: 2.09);
+	border-color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 }
 
 /* -----------------------------------
@@ -359,19 +359,19 @@ KisPaintOpPresetsEditor QToolButton:pressed {
 	background: transparent;
 }
 .QScrollBar::handle:vertical, .QScrollBar::handle:horizontal {
-	background: QPalette.ButtonText(0.84); /* force.QPalette.ButtonText */
+	background: QPalette.ButtonText(l: 0.84); /* force.QPalette.ButtonText */
 	border-style: solid;
 	border-radius: 4px;
 	border-width: 1px;
-	border-color: QPalette.ButtonText(0.89); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 0.89); /* force.QPalette.ButtonText */
 	min-height: 25px;
 	min-width: 25px;
 }
 .QScrollBar::handle:horizontal:hover, .QScrollBar::handle:vertical:hover {
-	background-color: QPalette.ButtonText(0.98); /* force.QPalette.ButtonText */
+	background-color: QPalette.ButtonText(l: 0.98); /* force.QPalette.ButtonText */
 	border-style: solid;
 	border-width: 1px;
-	border-color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 }
 .QScrollBar::add-line, .QScrollBar::sub-line {
     border: 0px;
@@ -393,13 +393,13 @@ QPushButton {
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 6px;
-	border-color: QPalette.ButtonText(0.76);
+	border-color: QPalette.ButtonText(l: 0.76);
 	color: QPalette.ButtonText;
 	padding-left: 16px;
 	padding-right: 16px;
 	padding-bottom: 3px;
 	padding-top: 1px;
-	background-color: QPalette.Button(1.80); /* force.QPalette.Button */
+	background-color: QPalette.Button(l: 1.80); /* force.QPalette.Button */
 	min-width: 20px;
 }
 
@@ -421,49 +421,49 @@ QPushButton::default{
 	border-color: QPalette.ButtonText;
 	background-color: QPalette.Highlight; /* force.QPalette.Highlight */
 	/*background: qlineargradient(x0:0, y0:1, x1:0, y1:1,
-                stop:0 QPalette.Highlight, stop:1 QPalette.Highlight(1.16));*/ /*Gradient test*/
+                stop:0 QPalette.Highlight, stop:1 QPalette.Highlight(l: 1.16));*/ /*Gradient test*/
 }
 
 QPushButton::default:hover{
-	color: QPalette.ButtonText(1.20); /* force.QPalette.HighlightedText */
+	color: QPalette.ButtonText(l: 1.20); /* force.QPalette.HighlightedText */
 	padding: 2px;
-	border-color: QPalette.ButtonText(1.20);
-	background-color: QPalette.Highlight(1.10); /* force.QPalette.Highlight */
+	border-color: QPalette.ButtonText(l: 1.20);
+	background-color: QPalette.Highlight(l: 1.10); /* force.QPalette.Highlight */
 }
 
 QPushButton:hover{
-	border-color: QPalette.ButtonText(0.89);
-	color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 0.89);
+	color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 }
 QPushButton:pressed{
 	border-style: solid;
-	border-color: QPalette.ButtonText(0.74);
+	border-color: QPalette.ButtonText(l: 0.74);
 	border-width: 1px;
 	border-style: solid;
-	color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
-	background-color: QPalette.Highlight(0.92);
+	color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
+	background-color: QPalette.Highlight(l: 0.92, s: 1.8);
 }
 
 QPushButton::default:pressed{
 	border-style: solid;
-	border-color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 	border-width: 1px;
 	border-style: solid;
 	color: QPalette.HighlightedText;
-	background-color: QPalette.Highlight(0.80); /* force.QPalette.Highlight */
+	background-color: QPalette.Highlight(l: 0.80, s: 1.8); /* force.QPalette.Highlight */
 }
 QPushButton:disabled{
 	border-style: solid;
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 6px;
-	border-color: QPalette.ButtonText(0.76, 0.40);
-	color: QPalette.ButtonText(1.09, 0.40); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 0.76, a: 0.40);
+	color: QPalette.ButtonText(l: 1.09, a: 0.40); /* force.QPalette.ButtonText */
 	padding-left: 16px;
 	padding-right: 16px;
 	padding-bottom: 3px;
 	padding-top: 1px;
-	background-color: QPalette.ToolTipBase(1.17, 0.40);
+	background-color: QPalette.ToolTipBase(l: 1.17, a: 0.40);
 }
 
 QPushButton#m_openButton {
@@ -513,7 +513,7 @@ QToolButton[popupMode="1"] {
 }
 
 QToolButton::menu-button {
-	background-color: QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
+	background-color: QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
 	border-radius: 6px;
 	height: 28px;
 	width: 28px;
@@ -525,7 +525,7 @@ KisToolBar QToolButton[popupMode="1"] {
 }
 
 KisToolBar QToolButton::menu-button {
-	background-color: QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
+	background-color: QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
 	border-radius: 4px;
 	height: 12px;
 	width: 12px;
@@ -533,18 +533,18 @@ KisToolBar QToolButton::menu-button {
 }
 
 .QToolButton::disabled, KisToolButton::disabled {
-	border-color: QPalette.Window(1.20);
+	border-color: QPalette.Window(l: 1.20);
 }
 
 .QToolButton::menu-button:hover, KisToolButton::menu-button:hover {
-	background-color: QPalette.ButtonText(0.89); /* force.QPalette.ButtonText */
+	background-color: QPalette.ButtonText(l: 0.89); /* force.QPalette.ButtonText */
 }
 
 .QToolButton::menu-button:pressed, KisToolButton::menu-button:pressed {
-/*	background-color: QPalette.Highlight(1.45);
+/*	background-color: QPalette.Highlight(l: 1.45);
 	border: 1px solid QPalette.HighlightedText;
 	padding: -1px;*/
-	background-color: QPalette.Highlight(2.11); /* force.QPalette.Highlight */
+	background-color: QPalette.Highlight(l: 2.11, s: 1.8); /* force.QPalette.Highlight */
 }
 
 .QToolButton::menu-arrow, KisToolButton::menu-arrow {
@@ -559,7 +559,7 @@ QToolBar QWidget QToolButton {
 }
 
 QToolBar QToolButton {
-	border-color: QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 6px;
@@ -583,8 +583,8 @@ QToolBar QWidget KisCompositeOpComboBox {
 }
 
 QToolBar KisWidgetChooser QToolButton {
-	border-color: QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
-	background-color: QPalette.Button(2.09);
+	border-color: QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
+	background-color: QPalette.Button(l: 2.09);
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 6px;
@@ -604,25 +604,25 @@ QToolBar KisWidgetChooser:down-arrow {
 }
 
 QToolBar KisWidgetChooser QToolButton:hover {
-	border-color: QPalette.ButtonText(1.00); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 1.00); /* force.QPalette.ButtonText */
 }
 
 QToolBar KisWidgetChooser QToolButton:pressed {
-	background-color: QPalette.Highlight(0.80);
-	border-color: QPalette.ButtonText(0.74);
+	background-color: QPalette.Highlight(l: 0.80, s: 1.8);
+	border-color: QPalette.ButtonText(l: 0.74);
 }
 
 QToolBar QToolButton:pressed {
-	background-color: QPalette.Highlight(0.78); /* force.QPalette.Highlight */
+	background-color: QPalette.Highlight(l: 0.78, s: 1.8); /* force.QPalette.Highlight */
 }
 
 QToolBar QToolButton:hover {
-	border-color: QPalette.ButtonText(0.89);
+	border-color: QPalette.ButtonText(l: 0.89);
 }
 
 QToolBar QToolButton:checked {
-	background-color: QPalette.Highlight(0.60);
-	border-color: QPalette.ButtonText(0.89);
+	background-color: QPalette.Highlight(l: 0.60, s: 1.8);
+	border-color: QPalette.ButtonText(l: 0.89);
 	border-width: 4px;
 	padding: 1px;
 	min-width: 21px;
@@ -630,8 +630,8 @@ QToolBar QToolButton:checked {
 }
 
 QToolBar QToolButton:checked:hover {
-	background-color: QPalette.Highlight(0.90);
-	border-color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	background-color: QPalette.Highlight(l: 0.90, s: 1.8);
+	border-color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 	border-width: 4px;
 	padding: 1px;
 	min-width: 21px;
@@ -639,8 +639,8 @@ QToolBar QToolButton:checked:hover {
 }
 
 QToolBar QToolButton:checked:pressed {
-	background-color: QPalette.Highlight(0.78); /* force.QPalette.Highlight */
-	border-color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	background-color: QPalette.Highlight(l: 0.78, s: 1.8); /* force.QPalette.Highlight */
+	border-color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 	border-width: 4px;
 	padding: 1px;
 	min-width: 21px;
@@ -649,7 +649,7 @@ QToolBar QToolButton:checked:pressed {
 
 
 PresetDockerDock QToolButton, LayerBox QToolButton, PaletteDockerDock QToolButton, KisAnimTimelineDocker .QToolButton, KisAnimCurvesDocker QToolButton, ArrangeDockerDock QToolButton, CompositionDockerDock QToolButton, PatternDockerDock QToolButton, PaletteGenerator QToolButton, LogDockerDock QToolButton, PluginDevToolsDialog QToolButton, PluginDevToolsDocker QToolButton, OverviewDockerDock QToolButton, shapesAndLayersSelectionArrangeDocker QToolButton, SnapshotDocker QToolButton, StoryboardDockerDock QToolButton, SvgSymbolCollectionDocker QToolButton, LutDockerDock QToolButton, TasksetDockerDock QToolButton, KisWelcomePageWidget QToolButton, KoToolDocker QToolButton, ntWidgetPad QToolButton, KisColorSelectorNgDock QToolButton, comics_project_manager_docker QToolButton, WGColorSelectorDock QToolButton, QToolButton#chkUsePercentage, QToolButton#btnShowHide, GamutMaskDock QToolButton, UIKanvasBuddy QToolButton, KisGenericGradientEditor QToolButton, KisPaintOpPresetsChooserPopup QToolButton {
-	border-color: QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 6px;
@@ -660,13 +660,13 @@ PresetDockerDock QToolButton, LayerBox QToolButton, PaletteDockerDock QToolButto
 }
 
 PresetDockerDock QToolButton:hover, LayerBox QToolButton:hover, PaletteDockerDock QToolButton:hover, KisAnimTimelineDocker .QToolButton:hover, KisAnimCurvesDocker QToolButton:hover, ArrangeDockerDock QToolButton:hover, CompositionDockerDock QToolButton:hover, PatternDockerDock QToolButton:hover, PaletteGenerator QToolButton:hover, LogDockerDock QToolButton:hover, PluginDevToolsDialog QToolButton:hover, PluginDevToolsDocker QToolButton:hover, OverviewDockerDock QToolButton::hover, shapesAndLayersSelectionArrangeDocker QToolButton:hover, SnapshotDocker QToolButton:hover, StoryboardDockerDock QToolButton:hover, SvgSymbolCollectionDocker QToolButton:hover, LutDockerDock QToolButton:hover, TasksetDockerDock QToolButton:hover, KisWelcomePageWidget QToolButton:hover, KoToolDocker QToolButton:hover, ntWidgetPad QToolButton:hover, KisColorSelectorNgDock QToolButton:hover, comics_project_manager_docker QToolButton:hover, WGColorSelectorDock QToolButton:hover, QToolButton#chkUsePercentage:hover, QToolButton#btnShowHide:hover, GamutMaskDock QToolButton:hover, UIKanvasBuddy QToolButton:hover, KisGenericGradientEditor QToolButton:hover, KisPaintOpPresetsChooserPopup QToolButton:hover {
-	border-color: QPalette.ButtonText(0.89); /* force.QPalette.ButtonText */
-	color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 0.89); /* force.QPalette.ButtonText */
+	color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 }
 
 PresetDockerDock QToolButton:pressed, LayerBox QToolButton:pressed, PaletteDockerDock QToolButton:pressed, KisAnimTimelineDocker .QToolButton:pressed, KisAnimCurvesDocker QToolButton:pressed, ArrangeDockerDock QToolButton:pressed, CompositionDockerDock QToolButton:pressed, PatternDockerDock QToolButton:pressed, PaletteGenerator QToolButton:pressed, LogDockerDock QToolButton:pressed, PluginDevToolsDialog QToolButton:pressed, PluginDevToolsDocker QToolButton:pressed, OverviewDockerDock QToolButton:pressed, shapesAndLayersSelectionArrangeDocker QToolButton:pressed, SnapshotDocker QToolButton:pressed, StoryboardDockerDock QToolButton:pressed, SvgSymbolCollectionDocker QToolButton:pressed, LutDockerDock QToolButton:pressed, TasksetDockerDock QToolButton:pressed, KisWelcomePageWidget QToolButton:pressed, KoToolDocker QToolButton:pressed, ntWidgetPad QToolButton:pressed, KisColorSelectorNgDock QToolButton:pressed, comics_project_manager_docker QToolButton:pressed, WGColorSelectorDock QToolButton:pressed, QToolButton#chkUsePercentage:pressed, QToolButton#btnShowHide:pressed, GamutMaskDock QToolButton:pressed, UIKanvasBuddy QToolButton:pressed, KisGenericGradientEditor QToolButton:pressed, KisPaintOpPresetsChooserPopup QToolButton:pressed {
-	background-color: QPalette.Highlight(0.60);
-	border-color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	background-color: QPalette.Highlight(l: 0.60, s: 1.8);
+	border-color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 }
 
 LayerBox QToolButton {
@@ -680,7 +680,7 @@ QToolButton#configureLayerDockerToolbar {
 }
 
 QDockWidget KisPopupButton {
-	border-color: QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 6px;
@@ -693,19 +693,19 @@ QDockWidget KisTagToolButton QToolButton {
 }*/
 
 QDockWidget KisPopupButton:hover {
-    border-color: QPalette.ButtonText(0.89); /* force.QPalette.ButtonText */
-	color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+    border-color: QPalette.ButtonText(l: 0.89); /* force.QPalette.ButtonText */
+	color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 }
 
 QDockWidget KisPopupButton:pressed {
-	background-color: QPalette.Highlight(0.92);
-	border-color: QPalette.ButtonText(0.74); /* force.QPalette.ButtonText */
+	background-color: QPalette.Highlight(l: 0.92, s: 1.8);
+	border-color: QPalette.ButtonText(l: 0.74); /* force.QPalette.ButtonText */
 }
 
 
 KisCanvasController QToolButton {
-	background-color: QPalette.Button(2.09);
-	border-color: QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
+	background-color: QPalette.Button(l: 2.09);
+	border-color: QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 6px;
@@ -718,19 +718,19 @@ KisCanvasController QToolButton {
 }
 
 KisCanvasController QToolButton:hover {
-	border-color: QPalette.ButtonText(1.00); /* force.QPalette.ButtonText */
-	color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 1.00); /* force.QPalette.ButtonText */
+	color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 }
 
 KisCanvasController QToolButton:pressed {
-	background-color: QPalette.Highlight(0.92);
-	border-color: QPalette.ButtonText(0.74);
+	background-color: QPalette.Highlight(l: 0.92, s: 1.8);
+	border-color: QPalette.ButtonText(l: 0.74);
 }
 
 KisZoomButton {
 	min-height: 16px;
 	min-width: 16px;
-	border-color: QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 6px;
@@ -742,8 +742,8 @@ KisAnimTimelineFramesView .QToolButton {
 }
 
 QToolButton#collapseButton {
-	border-color: QPalette.Highlight(1.21);
-	background-color: QPalette.Button(1.11);
+	border-color: QPalette.Highlight(l: 1.21);
+	background-color: QPalette.Button(l: 1.11);
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 6px;
@@ -756,13 +756,13 @@ QToolButton#collapseButton {
 }
 
 QToolButton#collapseButton:hover {
-	border-color: QPalette.ButtonText(0.89);
-	color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 0.89);
+	color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 }
 
 QToolButton#collapseButton:pressed {
-	background-color: QPalette.Highlight(0.60);
-	border-color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	background-color: QPalette.Highlight(l: 0.60, s: 1.8);
+	border-color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 }
 
 /* -----------------------------------
@@ -784,7 +784,7 @@ KoToolBoxScrollArea QWidget QWidget {
 
 KoToolBoxButton {
 	/*
-	border-color: QPalette.ToolTipBase(1.07);
+	border-color: QPalette.ToolTipBase(l: 1.07);
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 4px;
@@ -796,36 +796,36 @@ KoToolBoxButton {
 }
 
 KoToolBoxButton:checked {
-	border-color: QPalette.ButtonText(0.89);
+	border-color: QPalette.ButtonText(l: 0.89);
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 4px;
-	background-color: QPalette.Highlight(0.60);
+	background-color: QPalette.Highlight(l: 0.60, s: 1.9);
 }
 KoToolBoxButton:checked:hover {
-	border-color: QPalette.ButtonText(0.89);
-	background-color: QPalette.Highlight(0.90);
+	border-color: QPalette.ButtonText(l: 0.89);
+	background-color: QPalette.Highlight(l: 0.80, s: 1.8);
 }
 
 KoToolBoxButton:checked:pressed {
-	border-color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 4px;
-	background-color: QPalette.Highlight(0.45); /* force.QPalette.Highlight */
+	background-color: QPalette.Highlight(l: 0.45, s: 1.9); /* force.QPalette.Highlight */
 }
 
 KoToolBoxButton:hover {
-	border-color: QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
-	background-color: QPalette.Highlight(1.0, 0.25);
+	border-color: QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
+	background-color: QPalette.Highlight(l: 1.0, s: 1.8, a: 0.25);
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 4px;
 }
 
 KoToolBoxButton:pressed {
-	border-color: QPalette.ButtonText(0.74);
-	background-color: QPalette.Highlight(0.45); /* force.QPalette.Highlight */
+	border-color: QPalette.ButtonText(l: 0.74);
+	background-color: QPalette.Highlight(l: 0.45, s: 2.5); /* force.QPalette.Highlight */
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 4px;
@@ -837,9 +837,9 @@ KoToolBoxButton:pressed {
 */
 
 QComboBox {
-	background-color: QPalette.Button(1.80); /* force.QPalette.Button */
+	background-color: QPalette.Button(l: 1.80); /* force.QPalette.Button */
 	selection-background-color: QPalette.Highlight; /* force.QPalette.Highlight */
-    border: 1px solid QPalette.ButtonText(0.76);
+    border: 1px solid QPalette.ButtonText(l: 0.76);
     border-radius: 6px;
     padding-top: 0px;
 	padding-bottom: 0px;
@@ -856,9 +856,9 @@ QComboBox {
 }
 
 QComboBox:disabled {
-	border: 1px solid QPalette.ButtonText(0.66); /* force.QPalette.ButtonText */
-	color: QPalette.ButtonText(0.66); /* force.QPalette.ButtonText */
-	background-color: QPalette.ToolTipBase(0.94);
+	border: 1px solid QPalette.ButtonText(l: 0.66); /* force.QPalette.ButtonText */
+	color: QPalette.ButtonText(l: 0.66); /* force.QPalette.ButtonText */
+	background-color: QPalette.ToolTipBase(l: 0.94);
 }
 
 KisWidgetChooser QComboBox {
@@ -868,9 +868,9 @@ KisWidgetChooser QComboBox {
 }
 
 QComboBox::hover {
-	background-color: QPalette.Button(1.80); /* force.QPalette.Button */
-    border-color: QPalette.ButtonText(0.89); /* force.QPalette.ButtonText */
-	color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	background-color: QPalette.Button(l: 1.80); /* force.QPalette.Button */
+    border-color: QPalette.ButtonText(l: 0.89); /* force.QPalette.ButtonText */
+	color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 }
 
 
@@ -878,26 +878,27 @@ QComboBox::drop-down {
     width: 19px;
 	margin: 1px;
 	padding: -1px;
-    border: 1px solid QPalette.Highlight(1.60);
+    border: 1px solid QPalette.Highlight(l: 1.50, s: 2.4);
     border-radius: 5px;
 	background-color: QPalette.Highlight; /* force.QPalette.Highlight */
 	/*background: qlineargradient(x0:0, y0:1, x1:0, y1:1,
-                stop:0 QPalette.Highlight, stop:1 QPalette.Highlight(1.16));*/ /* Gradient test*/
+                stop:0 QPalette.Highlight, stop:1 QPalette.Highlight(l: 1.16));*/ /* Gradient test*/
 }
 
 QComboBox::drop-down:disabled {
-	background-color: QPalette.ButtonText(0.66);
+	background-color: QPalette.ButtonText(l: 0.66);
 }
 
 QComboBox::down-arrow {
-    color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+    color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
     image: url(stylesheet:images/arrows-light.svg);
+	/*image: url(stylesheet:images/arrows.svg).QPalette.Highlight(h:160, l:1.3, s: 1.4, a: 0.9);*/
 }
 
 QComboBox QAbstractItemView {
-	border: 1px solid QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
-	color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
-	background-color: QPalette.Base(0.86);
+	border: 1px solid QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
+	color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
+	background-color: QPalette.Base(l: 0.86);
 	selection-color: QPalette.HighlightedText; /* force.QPalette.HighlightedText */
 	selection-background-color: QPalette.Highlight; /* force.QPalette.Highlight */
 	padding: 4px;
@@ -910,10 +911,10 @@ QComboBox QAbstractItemView {
 */
 
 .KisWidgetChooser {
-	background-color: QPalette.Window(1.10); /* force.QPalette.Window */
+	background-color: QPalette.Window(l: 1.10); /* force.QPalette.Window */
 	border-radius: 6px;
 	border-width: 1px;
-	border-color: QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
 	border-style: solid;
 	height: 20px;
 	margin-bottom: 4px;
@@ -928,14 +929,14 @@ QComboBox QAbstractItemView {
 }
 
 KisWidgetChooser:hover {
-	border-color: QPalette.ButtonText(0.89); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 0.89); /* force.QPalette.ButtonText */
 }
 
 QDoubleSpinBox, QSpinBox, KisWidgetChooser QDoubleSpinBox {
-/*	background-color: QPalette.Window(0.45); */ /* force.QPalette.Window */
+/*	background-color: QPalette.Window(l: 0.45); */ /* force.QPalette.Window */
 	border-radius: 1px;
 	border-width: 4px;
-	border-color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 	min-height: 26px;
 	padding-left: 6px;
 	padding-right: 6px;
@@ -951,8 +952,8 @@ LayerBox QWidget QDoubleSpinBox {
 }
 
 QDoubleSpinBox::up-button, QSpinBox::up-button {
-	/* background-color: QPalette.Highlight(1.67); */
-	border-color: QPalette.Highlight(1.67);
+	/* background-color: QPalette.Highlight(l: 1.67); */
+	border-color: QPalette.Highlight(l: 1.67);
 	border-style: solid;
 	border-radius: 2px;
 	margin-bottom: 1px;
@@ -960,13 +961,13 @@ QDoubleSpinBox::up-button, QSpinBox::up-button {
 
 QDoubleSpinBox::up-button:hover, QSpinBox::up-button:hover {
 	/* border-width: 1px; */
-	background-color: QPalette.ButtonText(0.95);
+	background-color: QPalette.ButtonText(l: 0.95);
 }
 
 QDoubleSpinBox::up-button:pressed, QSpinBox::upbutton:pressed {
 	/* border-width: 1px; */
-	border-color: QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
-	background-color: QPalette.Highlight(1.45);
+	border-color: QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
+	background-color: QPalette.Highlight(l: 1.45);
 }
 
 QDoubleSpinBox::up-arrow, QSpinBox::up-arrow {
@@ -980,24 +981,25 @@ QDoubleSpinBox::up-arrow:pressed, QSpinBox::up-arrow:pressed {
 }
 
 QDoubleSpinBox::down-button, QSpinBox::down-button {
-	/* background-color: QPalette.Highlight(1.67); */
-	border-color: QPalette.ButtonText(0.95);
+	/* background-color: QPalette.Highlight(l: 1.67); */
+	border-color: QPalette.ButtonText(l: 0.95);
 	border-radius: 2px;
 }
 
 QDoubleSpinBox::down-button:hover, QSpinBox::down-button:hover {
 	border-width: 1px;
-	background-color: QPalette.ButtonText(0.95);
+	background-color: QPalette.ButtonText(l: 0.95);
 }
 
 QDoubleSpinBox::down-button:pressed, QSpinBox::down-button:pressed {
 	border-width: 1px;
-	border-color: QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
-	background-color: QPalette.Highlight(1.45);
+	border-color: QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
+	background-color: QPalette.Highlight(l: 1.45);
 }
 
 QDoubleSpinBox::down-arrow, QSpinBox::down-arrow {
 	image: url(stylesheet:images/down-arrow-light.svg);
+	/*image: url(stylesheet:images/down-arrow-light.svg).QPalette.Highlight(s:1.9, h:50, l:1.8);*/
 }
 QDoubleSpinBox::down-arrow:hover, QSpinBox::down-arrow:hover {
 	image: url(stylesheet:images/down-arrow.svg);
@@ -1012,19 +1014,19 @@ QDoubleSpinBox::down-arrow:pressed, QSpinBox::down-arrow:pressed {
 */
 
 QHeaderView::section {
-    background-color: QPalette.Base(1.07);
-    color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+    background-color: QPalette.Base(l: 1.07);
+    color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
     padding-left: 4px;
 	border-style: solid;
     border-bottom-width: 1px;
-	border-bottom-color: QPalette.Highlight(1.21);
+	border-bottom-color: QPalette.Highlight(l: 1.21);
 }
 
 QTreeWidget {
-	background-color: QPalette.Base(1.07);
+	background-color: QPalette.Base(l: 1.07);
 	border-width: 1px;
 	border-style: solid;
-	border-color: QPalette.Highlight(1.21);
+	border-color: QPalette.Highlight(l: 1.21);
 	border-radius: 6px;
 	padding-top: 3px;
 	padding-bottom: 3px;
@@ -1039,36 +1041,36 @@ QSlider::groove:horizontal {
     border: 0px;
 	border-radius: 2px;
     height: 4px;
-    background: QPalette.ToolTipBase(1.85);
+    background: QPalette.ToolTipBase(l: 1.85);
     margin: 2px 2px;;
 }
 
 QSlider::handle:horizontal {
-    background: QPalette.Button(2.09);
-    border: 1px solid QPalette.ButtonText(0.76);
+    background: QPalette.Button(l: 2.09);
+    border: 1px solid QPalette.ButtonText(l: 0.76);
     width: 14px;
     margin: -6px 0;
     border-radius: 8px;
 }
 
 QSlider::handle:horizontal:hover {
-    background: QPalette.Button(2.09);
-    border: 1px solid QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+    background: QPalette.Button(l: 2.09);
+    border: 1px solid QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
     width: 14px;
     margin: -6px 0;
     border-radius: 8px;
 }
 
 QSlider::handle:horizontal:pressed {
-    background: QPalette.Highlight(0.97);
-    border: 1px solid QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+    background: QPalette.Highlight(l: 0.97);
+    border: 1px solid QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
     width: 14px;
     margin: -6px 0;
     border-radius: 8px;
 }
 
 QSlider::add-page:horizontal {
-    background: QPalette.ToolTipBase(1.85);
+    background: QPalette.ToolTipBase(l: 1.85);
 	height: 4px;
 	border: 0px;
 	border-radius: 2px;
@@ -1076,7 +1078,7 @@ QSlider::add-page:horizontal {
 }
 
 QSlider::sub-page:horizontal {
-    background: QPalette.ButtonText(0.89);
+    background: QPalette.ButtonText(l: 0.89);
 	height: 4px;
 	border: 0px;
 	border-radius: 2px;
@@ -1113,33 +1115,33 @@ QCheckBox::indicator, QGroupBox::indicator, QListView::indicator, QMenu::indicat
 }
 
 QCheckBox::indicator:unchecked, QGroupBox::indicator:unchecked, QListView::indicator:unchecked, QMenu::indicator:unchecked {
-	background-color: QPalette.Button(2.09);
-	border-color: QPalette.ButtonText(0.83);
+	background-color: QPalette.Button(l: 2.09);
+	border-color: QPalette.ButtonText(l: 0.83);
 }
 
 QCheckBox::indicator:unchecked:hover, QGroupBox::indicator:unchecked:hover, QListView::indicator:unchecked:hover, QMenu::indicator:unchecked:hover {
-	border-color: QPalette.ButtonText(1.00);
+	border-color: QPalette.ButtonText(l: 1.00);
 }
 
 QCheckBox::indicator:unchecked:pressed, QGroupBox::indicator:unchecked:pressed, QListView::indicator:unchecked:pressed, QMenu::indicator:unchecked:pressed {
-	border-color: QPalette.ButtonText(0.86);
-	background-color: QPalette.Highlight(0.97);
+	border-color: QPalette.ButtonText(l: 0.86);
+	background-color: QPalette.Highlight(l: 0.97, s: 1.8);
 }
 
 QCheckBox::indicator:checked, QGroupBox::indicator:checked, QListView::indicator:checked, QMenu::indicator:checked {
-	border-color: QPalette.ButtonText(0.86);
-	background-color: QPalette.Highlight(0.50);
+	border-color: QPalette.ButtonText(l: 0.86);
+	background-color: QPalette.Highlight(l: 0.50, s: 1.8);
     image: url(stylesheet:images/checkmark-light-grey.svg);
 }
 
 QCheckBox::indicator:checked:hover, QGroupBox::indicator:checked:hover, QListView::indicator:checked:hover, QMenu::indicator:checked:hover  {
-	border-color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	border-color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
     image: url(stylesheet:images/checkmark-light.svg);
 }
 
 QCheckBox::indicator:checked:pressed, QGroupBox::indicator:checked:pressed, QListView::indicator:checked:pressed, QMenu::indicator:checked:pressed {
-	border-color: QPalette.ButtonText(0.86);
-	background-color: QPalette.Highlight(0.97);
+	border-color: QPalette.ButtonText(l: 0.86);
+	background-color: QPalette.Highlight(l: 0.97, s: 1.8);
     image: url(stylesheet:images/checkmark-light-grey.svg);
 }
 
@@ -1157,8 +1159,8 @@ QCheckBox::indicator:indeterminate:pressed, QGroupBox::indicator:indeterminate:p
 */
 
 QGroupBox, QDockWidget .QGroupBox {
-    background-color: QPalette.Window(0.95);
-    border: 1px solid QPalette.ToolTipBase(1.85); /* force.QPalette.ToolTipBase */
+    background-color: QPalette.Window(l: 0.95);
+    border: 1px solid QPalette.ToolTipBase(l: 1.85); /* force.QPalette.ToolTipBase */
     border-radius: 4px;
 
 	/* Windows */
@@ -1183,7 +1185,7 @@ QGroupBox#presetsContainer, QGroupBox#brushEditorSettingsControls, QGroupBox#scr
 }
 
 QGroupBox::disabled {
-	border: 1px solid QPalette.Window(1.64);
+	border: 1px solid QPalette.Window(l: 1.64);
 }
 
 QGroupBox::title {
@@ -1208,7 +1210,7 @@ QStackedWidget QLabel {
 }*/
 
 QListView::item:hover {
-	background-color: QPalette.Button(1.04);
+	background-color: QPalette.Button(l: 1.04);
 }
 
 QListView::item:selected:active:hover, QListView::item:selected:!active:hover {
@@ -1240,7 +1242,7 @@ ntScrollAreaContainer > QScrollArea {
 }*/
 
 /*QDockWidget QWidget QAbstractScrollArea {
-	background: QPalette.Window(0.45);
+	background: QPalette.Window(l: 0.45);
 	border-radius: 6px;
 	padding: 3px;
 
@@ -1258,7 +1260,7 @@ QFrame[frameShape="4"] {
 	min-height: 1px;
 	margin: 8px;
 	padding: 0;
-	background-color: QPalette.Highlight(0.86);
+	background-color: QPalette.Highlight(l: 0.86);
 }
 
 QFrame[frameShape="5"] {
@@ -1267,7 +1269,7 @@ QFrame[frameShape="5"] {
 	min-width: 1px;
 	margin: 8px;
 	padding: 0;
-	background-color: QPalette.Highlight(0.86);
+	background-color: QPalette.Highlight(l: 0.86);
 }
 
 /* -----------------------------------
@@ -1291,16 +1293,16 @@ KisTagFilterWidget QLineEdit {
 	padding-bottom: 3px;
 	padding-left: 4px;
 	border-radius: 6px;
-	border: 1px solid QPalette.Window(1.50); /* force.QPalette.Window */
+	border: 1px solid QPalette.Window(l: 1.50); /* force.QPalette.Window */
 }
 
 KisTagFilterWidget QLineEdit:hover {
-	border: 1px solid QPalette.ButtonText(0.51); /* force.QPalette.ButtonText */
+	border: 1px solid QPalette.ButtonText(l: 0.51); /* force.QPalette.ButtonText */
 	padding-left: 4px;
 }
 
 KisTagFilterWidget QLineEdit:focus {
-	border: 1px solid QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	border: 1px solid QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 	padding-left: 4px;
 }
 
@@ -1311,23 +1313,23 @@ KisTagFilterWidget QLineEdit:focus {
 */
 
 QMenu {
-	border: 1px solid QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
+	border: 1px solid QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
 	/*border-radius: 6px;*/  /* korners */
 	padding: 4px;
-	background-color: QPalette.Base(0.86);
+	background-color: QPalette.Base(l: 0.86);
 	margin: 0px;
-	color: QPalette.ButtonText(1.09); /* force.QPalette.ButtonText */
+	color: QPalette.ButtonText(l: 1.09); /* force.QPalette.ButtonText */
 }
 
 QFrame#KisPopupButtonFrame > QMenu {
 	border: 0;
-	background-color: QPalette.Base(0.86);
+	background-color: QPalette.Base(l: 0.86);
 	padding: 0px;
 	margin: 0px;
 }
 
 PresetDockerDock QFrame#KisPopupButtonFrame, KisPaintOpPresetsChooserPopup QFrame#KisPopupButtonFrame {
-	background-color: QPalette.Base(0.86);
+	background-color: QPalette.Base(l: 0.86);
 	padding: 0px;
 	margin: 0px;
 }
@@ -1379,7 +1381,7 @@ QMenu::item:selected {
 
 QMenu::separator {
     height: 1px;
-    background: QPalette.ToolTipBase(1.14);
+    background: QPalette.ToolTipBase(l: 1.14);
     margin-left: 12px;
     margin-right: 12px;
 	margin-top: 4px;
@@ -1397,8 +1399,8 @@ KisCompositeOpComboBox QWidget * , KisTagChooserWidget QWidget * {
 }
 
 KisCompositeOpComboBox KisCategorizedListView {
-	border: 1px solid QPalette.ButtonText(0.78); /* force.QPalette.ButtonText */
-	background-color: QPalette.Base(0.86);
+	border: 1px solid QPalette.ButtonText(l: 0.78); /* force.QPalette.ButtonText */
+	background-color: QPalette.Base(l: 0.86);
 	padding-left: 4px;
 	padding-right: 4px;
 	padding-top: 4px;
@@ -1437,18 +1439,18 @@ QLabel#manualLink, QLabel#poweredByKDELink, QLabel#sourceCodeLink, QLabel#gettin
 .QLabel#supportKritaLink {
 	padding-left: 1px;
 	padding-right: 1px;
-	border: 2px solid QPalette.Highlight(1.70);
+	border: 2px solid QPalette.Highlight(l: 1.70);
 	border-radius: 4px;
-	background-color: QPalette.Base(0.86);
+	background-color: QPalette.Base(l: 0.86);
 	/*font-weight: bold;*/
 }
 
 
 QStackedWidget#recentDocsStackedWidget {
 	border-radius: 6px;
-/*	background-color: QPalette.Base(0.86);*/
+/*	background-color: QPalette.Base(l: 0.86);*/
 	padding: 8px;
-/*	border: 1px solid QPalette.Button(2.09);*/
+/*	border: 1px solid QPalette.Button(l: 2.09);*/
 }
 
 QFrame#dropAreaIndicator QWidget#widgetRight {
