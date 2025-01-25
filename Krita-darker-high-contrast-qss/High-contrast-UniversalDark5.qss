@@ -1343,7 +1343,7 @@ QDockWidget#KisLayerBox QMenu {
 	margin-bottom: 0px;
 }
 
-/* macOS, Windows */
+/* macOS */
 QDockWidget#KisLayerBox QMenu KisColorLabelSelectorWidgetMenuWrapper, QDockWidget#KisLayerBox QMenu KisColorLabelSelectorWidget {
 	max-height: 32px;
 	padding: 3px;
@@ -1356,22 +1356,22 @@ QMenu::item {
 	padding-bottom: 4px;
 }
 
-/* linux */
+/* linux, Windows */
 /*QDockWidget#KisLayerBox QMenu::item {
 	padding-left: 2px;
 }*/
 
-/* linux */
+/* linux, Windows */
 /*QDockWidget#KisLayerBox QMenu QMenu::item {
 	padding-left: 2px;
 }*/
 
-/* macOS, Windows */
+/* macOS */
 QDockWidget#KisLayerBox QMenu::item {
 	padding-left: -8px;
 }
 
-/* macOS, Windows */
+/* macOS */
 QDockWidget#KisLayerBox QMenu QMenu::item {
 	padding-left: 8px;
 }
@@ -1469,14 +1469,44 @@ QFrame#newsFrame {
    -----------------------------------
 */
 
+
 PigmentO_Docker QPushButton {
 	min-height: 16px;
 }
 
+PigmentO_Docker QWidget#footer {
+	min-height: 30px;
+}
+
+PigmentO_Docker QWidget#footer_widget {
+	min-height: 18px;
+	padding-bottom: 4px;
+}
+
 PigmentO_Docker QWidget#footer_widget QPushButton {
-	min-height: 14px;
-	margin: 2px;
-	border-radius: 4px;
+	min-height: 18px;
+	max-height: 18px;
+	min-width: 18px;
+	max-width: 18px;
+	padding: 4px;
+	margin-top: 0px;
+	margin-left: 2px;
+	margin-right: 2px;
+	background: QPalette.Window;
+}
+
+PigmentO_Docker QWidget#footer_widget QPushButton#mode {
+	min-width: 36px;
+	max-width: 36px;
+	background: QPalette.Button(l: 1.80);
+}
+
+PigmentO_Docker QWidget#footer_widget QPushButton:pressed, PigmentO_Docker QWidget#footer_widget QPushButton:selected {
+	background-color: QPalette.Highlight(l: 0.60, s: 1.8);
+}
+
+PigmentO_Docker QMenu {
+	margin: 0px;
 }
 
 PigmentO_Docker QPushButton#harmony, PigmentO_Docker QPushButton#channel, PigmentO_Docker QPushButton#mixer, PigmentO_Docker QPushButton#pin, PigmentO_Docker QPushButton#history, PigmentO_Docker QPushButton#history {
@@ -1484,6 +1514,10 @@ PigmentO_Docker QPushButton#harmony, PigmentO_Docker QPushButton#channel, Pigmen
 	margin-left: 1px;
 	margin-right: 1px;
 	min-height: 22px;
+}
+
+PigmentO_Docker QPushButton#harmony:on, PigmentO_Docker QPushButton#channel:on, PigmentO_Docker QPushButton#mixer:on, PigmentO_Docker QPushButton#pin:on, PigmentO_Docker QPushButton#history:on, PigmentO_Docker QPushButton#history:on {
+	background: QPalette.Highlight(l: 0.60, s: 1.8);
 }
 
 PigmentO_Docker QGroupBox {
@@ -1499,6 +1533,7 @@ PigmentO_Docker QStackedWidget#panel_set QWidget#panel_hue {
 	margin-bottom: -8px;
 	margin-top: -8px;
 }
+
 
 /* -----------------------------------
 	Timer Watch Plugin
