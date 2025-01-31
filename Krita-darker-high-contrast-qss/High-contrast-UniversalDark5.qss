@@ -1520,6 +1520,10 @@ PigmentO_Docker QPushButton#harmony:on, PigmentO_Docker QPushButton#channel:on, 
 	background: QPalette.Highlight(l: 0.60, s: 1.8);
 }
 
+PigmentO_Docker QPushButton#harmony:on:pressed, PigmentO_Docker QPushButton#channel:on:pressed, PigmentO_Docker QPushButton#mixer:on:pressed, PigmentO_Docker QPushButton#pin:on:pressed, PigmentO_Docker QPushButton#history:on:pressed, PigmentO_Docker QPushButton#history:on:pressed {
+	background: QPalette.Highlight(l: 0.92, s: 1.8);
+}
+
 PigmentO_Docker QGroupBox {
 	padding: 4px;
 }
@@ -1534,6 +1538,11 @@ PigmentO_Docker QStackedWidget#panel_set QWidget#panel_hue {
 	margin-top: -8px;
 }
 
+PigmentO_Docker QLineEdit#hex_string {
+	min-height: 18px;
+	margin: 2px;
+	border-radius: 4px;
+}
 
 /* -----------------------------------
 	Timer Watch Plugin
@@ -1550,4 +1559,95 @@ TimerWatch_Docker QTimeEdit, TimerWatch_Docker QLineEdit {
 	min-height: 16px;
 	margin: 0px;
 	padding: 2px;
+}
+
+/* -----------------------------------
+	HCL Sliders Plugin
+   -----------------------------------
+*/
+
+HCLSliders ColorDisplay {
+	min-height: 26px;
+}
+
+HCLSliders > .QWidget > QPushButton {
+	min-height: 18px;
+	max-height: 18px;
+	min-width: 18px;
+	max-width: 18px;
+	padding: 4px;
+	margin-top: 12px;
+	margin-left: 2px;
+	margin-right: 2px;
+	background: QPalette.Window;
+}
+
+HCLSliders > .QWidget > QPushButton:pressed {
+	background: QPalette.Highlight(l: 0.60, s: 1.8);
+	border-color: QPalette.ButtonText(l: 1.09);
+}
+
+HCLSliders QWidget QLineEdit {
+	min-height: 24px;
+	margin-top: 0px;
+	margin-left: 2px;
+	margin-right: 2px;
+	border-radius: 6px;
+	border: 1px solid QPalette.Window(l: 1.50);
+}
+
+HCLSliders QWidget QLineEdit:hover {
+	border: 1px solid QPalette.ButtonText(l: 0.51);
+}
+
+HCLSliders QWidget QLineEdit:focus {
+	border: 1px solid QPalette.ButtonText(l: 1.09);
+}
+
+HCLSliders ColorHistory {
+	min-height: 16px;
+}
+
+HCLSliders QWidget QLabel {
+	min-height: 12px;
+}
+
+HCLSliders QWidget QDoubleSpinBox {
+	margin-left: 2px;
+	margin-top: 0px;
+	margin-right: 0px;
+	min-width: 64px;
+	padding-right: 0px;
+	border-radius: 4px;
+	min-height: 24px;
+}
+
+HCLSliders QWidget QDoubleSpinBox::up-button, HCLSliders QWidget QDoubleSpinBox::down-button {
+	min-height: 8px;
+}
+
+HCLSliders ChannelSlider {
+	min-height: 16px;
+}
+
+HCLSliders SliderConfig {
+	max-height: 1000px;
+	max-width: 1000px;
+	min-height: 280px;
+	min-width: 480px;
+}
+
+HCLSliders SliderConfig QGroupBox {
+	min-height: 48px;
+}
+
+HCLSliders SliderConfig QTabWidget::pane {
+	bottom: 4px;
+	padding-top: 0px;
+}
+
+HCLSliders SliderConfig QTabBar QCheckBox {
+	padding: 0px;
+	margin-left: 8px;
+	min-width: 14px;
 }
