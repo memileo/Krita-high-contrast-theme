@@ -145,8 +145,8 @@ QTabBar::tab:last {
 }
 
 QTabBar::tab:middle {
-	margin-left: -4px;
-	margin-right: -4px;
+	margin-left: -2px;
+	margin-right: -2px;
 	padding-left: 8px;
 	padding-right: 8px;
 }
@@ -312,6 +312,8 @@ KisPaintOpPresetsEditor QToolButton {
 	margin-left: 2px;
 	margin-right: 2px;
 	padding-left: 1px;
+	min-height: 20px;
+	max-height: 20px;
 }
 
 KisPaintOpPresetsEditor QToolButton:hover {
@@ -637,7 +639,7 @@ QToolBar QToolButton:checked:pressed {
 }
 
 
-PresetDockerDock QToolButton, LayerBox QToolButton, PaletteDockerDock QToolButton, KisAnimTimelineDocker .QToolButton, KisAnimCurvesDocker QToolButton, ArrangeDockerDock QToolButton, CompositionDockerDock QToolButton, PatternDockerDock QToolButton, PaletteGenerator QToolButton, LogDockerDock QToolButton, PluginDevToolsDialog QToolButton, PluginDevToolsDocker QToolButton, OverviewDockerDock QToolButton, shapesAndLayersSelectionArrangeDocker QToolButton, SnapshotDocker QToolButton, StoryboardDockerDock QToolButton, SvgSymbolCollectionDocker QToolButton, LutDockerDock QToolButton, TasksetDockerDock QToolButton, KisWelcomePageWidget QToolButton, KoToolDocker QToolButton, ntWidgetPad QToolButton, KisColorSelectorNgDock QToolButton, comics_project_manager_docker QToolButton, WGColorSelectorDock QToolButton, QToolButton#chkUsePercentage, QToolButton#btnShowHide, GamutMaskDock QToolButton, UIKanvasBuddy QToolButton, KisGenericGradientEditor QToolButton, KisPaintOpPresetsChooserPopup QToolButton {
+PresetDockerDock QToolButton, LayerBox QToolButton, PaletteDockerDock QToolButton, KisAnimTimelineDocker .QToolButton, KisAnimCurvesDocker .QToolButton, ArrangeDockerDock QToolButton, CompositionDockerDock QToolButton, PatternDockerDock QToolButton, PaletteGenerator QToolButton, LogDockerDock QToolButton, PluginDevToolsDialog QToolButton, PluginDevToolsDocker QToolButton, OverviewDockerDock QToolButton, shapesAndLayersSelectionArrangeDocker QToolButton, SnapshotDocker QToolButton, StoryboardDockerDock QToolButton, SvgSymbolCollectionDocker QToolButton, LutDockerDock QToolButton, TasksetDockerDock QToolButton, KisWelcomePageWidget QToolButton, KoToolDocker QToolButton, ntWidgetPad QToolButton, KisColorSelectorNgDock QToolButton, comics_project_manager_docker QToolButton, WGColorSelectorDock QToolButton, QToolButton#chkUsePercentage, QToolButton#btnShowHide, GamutMaskDock QToolButton, UIKanvasBuddy QToolButton, KisGenericGradientEditor QToolButton, KisPaintOpPresetsChooserPopup QToolButton {
 	border-color: rgb(183, 183, 183);
 	border-width: 1px;
 	border-style: solid;
@@ -648,12 +650,12 @@ PresetDockerDock QToolButton, LayerBox QToolButton, PaletteDockerDock QToolButto
 	padding: 1px 0px 0px 1px;
 }
 
-PresetDockerDock QToolButton:hover, LayerBox QToolButton:hover, PaletteDockerDock QToolButton:hover, KisAnimTimelineDocker .QToolButton:hover, KisAnimCurvesDocker QToolButton:hover, ArrangeDockerDock QToolButton:hover, CompositionDockerDock QToolButton:hover, PatternDockerDock QToolButton:hover, PaletteGenerator QToolButton:hover, LogDockerDock QToolButton:hover, PluginDevToolsDialog QToolButton:hover, PluginDevToolsDocker QToolButton:hover, OverviewDockerDock QToolButton::hover, shapesAndLayersSelectionArrangeDocker QToolButton:hover, SnapshotDocker QToolButton:hover, StoryboardDockerDock QToolButton:hover, SvgSymbolCollectionDocker QToolButton:hover, LutDockerDock QToolButton:hover, TasksetDockerDock QToolButton:hover, KisWelcomePageWidget QToolButton:hover, KoToolDocker QToolButton:hover, ntWidgetPad QToolButton:hover, KisColorSelectorNgDock QToolButton:hover, comics_project_manager_docker QToolButton:hover, WGColorSelectorDock QToolButton:hover, QToolButton#chkUsePercentage:hover, QToolButton#btnShowHide:hover, GamutMaskDock QToolButton:hover, UIKanvasBuddy QToolButton:hover, KisGenericGradientEditor QToolButton:hover, KisPaintOpPresetsChooserPopup QToolButton:hover {
+PresetDockerDock QToolButton:hover, LayerBox QToolButton:hover, PaletteDockerDock QToolButton:hover, KisAnimTimelineDocker .QToolButton:hover, KisAnimCurvesDocker .QToolButton:hover, ArrangeDockerDock QToolButton:hover, CompositionDockerDock QToolButton:hover, PatternDockerDock QToolButton:hover, PaletteGenerator QToolButton:hover, LogDockerDock QToolButton:hover, PluginDevToolsDialog QToolButton:hover, PluginDevToolsDocker QToolButton:hover, OverviewDockerDock QToolButton::hover, shapesAndLayersSelectionArrangeDocker QToolButton:hover, SnapshotDocker QToolButton:hover, StoryboardDockerDock QToolButton:hover, SvgSymbolCollectionDocker QToolButton:hover, LutDockerDock QToolButton:hover, TasksetDockerDock QToolButton:hover, KisWelcomePageWidget QToolButton:hover, KoToolDocker QToolButton:hover, ntWidgetPad QToolButton:hover, KisColorSelectorNgDock QToolButton:hover, comics_project_manager_docker QToolButton:hover, WGColorSelectorDock QToolButton:hover, QToolButton#chkUsePercentage:hover, QToolButton#btnShowHide:hover, GamutMaskDock QToolButton:hover, UIKanvasBuddy QToolButton:hover, KisGenericGradientEditor QToolButton:hover, KisPaintOpPresetsChooserPopup QToolButton:hover {
 	border-color: rgb(209, 209, 209);
 	color: rgb(255, 255, 255);
 }
 
-PresetDockerDock QToolButton:pressed, LayerBox QToolButton:pressed, PaletteDockerDock QToolButton:pressed, KisAnimTimelineDocker .QToolButton:pressed, KisAnimCurvesDocker QToolButton:pressed, ArrangeDockerDock QToolButton:pressed, CompositionDockerDock QToolButton:pressed, PatternDockerDock QToolButton:pressed, PaletteGenerator QToolButton:pressed, LogDockerDock QToolButton:pressed, PluginDevToolsDialog QToolButton:pressed, PluginDevToolsDocker QToolButton:pressed, OverviewDockerDock QToolButton:pressed, shapesAndLayersSelectionArrangeDocker QToolButton:pressed, SnapshotDocker QToolButton:pressed, StoryboardDockerDock QToolButton:pressed, SvgSymbolCollectionDocker QToolButton:pressed, LutDockerDock QToolButton:pressed, TasksetDockerDock QToolButton:pressed, KisWelcomePageWidget QToolButton:pressed, KoToolDocker QToolButton:pressed, ntWidgetPad QToolButton:pressed, KisColorSelectorNgDock QToolButton:pressed, comics_project_manager_docker QToolButton:pressed, WGColorSelectorDock QToolButton:pressed, QToolButton#chkUsePercentage:pressed, QToolButton#btnShowHide:pressed, GamutMaskDock QToolButton:pressed, UIKanvasBuddy QToolButton:pressed, KisGenericGradientEditor QToolButton:pressed, KisPaintOpPresetsChooserPopup QToolButton:pressed {
+PresetDockerDock QToolButton:pressed, LayerBox QToolButton:pressed, PaletteDockerDock QToolButton:pressed, KisAnimTimelineDocker .QToolButton:pressed, KisAnimCurvesDocker .QToolButton:pressed, ArrangeDockerDock QToolButton:pressed, CompositionDockerDock QToolButton:pressed, PatternDockerDock QToolButton:pressed, PaletteGenerator QToolButton:pressed, LogDockerDock QToolButton:pressed, PluginDevToolsDialog QToolButton:pressed, PluginDevToolsDocker QToolButton:pressed, OverviewDockerDock QToolButton:pressed, shapesAndLayersSelectionArrangeDocker QToolButton:pressed, SnapshotDocker QToolButton:pressed, StoryboardDockerDock QToolButton:pressed, SvgSymbolCollectionDocker QToolButton:pressed, LutDockerDock QToolButton:pressed, TasksetDockerDock QToolButton:pressed, KisWelcomePageWidget QToolButton:pressed, KoToolDocker QToolButton:pressed, ntWidgetPad QToolButton:pressed, KisColorSelectorNgDock QToolButton:pressed, comics_project_manager_docker QToolButton:pressed, WGColorSelectorDock QToolButton:pressed, QToolButton#chkUsePercentage:pressed, QToolButton#btnShowHide:pressed, GamutMaskDock QToolButton:pressed, UIKanvasBuddy QToolButton:pressed, KisGenericGradientEditor QToolButton:pressed, KisPaintOpPresetsChooserPopup QToolButton:pressed {
 	background-color: rgb(94, 94, 94);
 	border-color: rgb(255, 255, 255);
 }
@@ -879,6 +881,29 @@ QComboBox QAbstractItemView {
 	selection-background-color: rgb(121, 121, 121);
 	padding: 4px;
 	/*border-radius: 6px;*/  /* korners */
+}
+
+/*Color Adjustment Curve filter test*/
+QComboBox#comboBoxPresets  {
+	max-width: 58px;
+	font-size: 9px;
+}
+
+/*QComboBox#cmbChannel {
+	min-height: 30px;
+	min-width: 150px;
+	margin-bottom: 10px;
+	font: bold 28px;
+	padding-left: 8px;
+	padding-bottom: 2px;
+	margin-left: 4px;
+	margin-right: 4px;
+}*/
+
+QCheckBox#chkLogarithmic {
+	/*margin-top: 12px;*/
+	margin-top: 10px;
+	margin-left: 2px;
 }
 
 /* -----------------------------------
@@ -1191,6 +1216,12 @@ QListView::item:selected:active:hover, QListView::item:selected:!active:hover {
 	Dock widget
    -----------------------------------
 */
+
+KoDockWidgetTitleBarButton {
+	min-width: 14px;
+	height: 14px;
+	min-height: 14px;
+}
 
 QDockWidget QWidget, KisPaintOpPresetsChooserPopup QWidget {
 	margin-top: 4px;
@@ -1612,4 +1643,20 @@ HCLSliders SliderConfig QTabBar QCheckBox {
 	padding: 0px;
 	margin-left: 8px;
 	min-width: 14px;
+}
+
+/* -----------------------------------
+	KanvasBuddy Plugin
+   -----------------------------------
+*/
+KBTitleBar, KBTitleBar QToolButton {
+	min-height: 12px;
+	min-width: 12px;
+	padding: 0;
+	border-radius: 2px;
+}
+
+KBPanelCloseButton {
+	min-height: 16px;
+	margin-bottom: 9px;
 }
