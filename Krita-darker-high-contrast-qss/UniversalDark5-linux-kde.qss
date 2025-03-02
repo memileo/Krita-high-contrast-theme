@@ -224,6 +224,7 @@ QMdiArea > QTabBar::tab:selected, QMdiArea > QTabBar::tab:middle:selected {
 	background-color: QPalette.Window;
 	padding-bottom: 6px;
 	padding-top: 5px;
+	background-image: url();
 }
 
 QMdiArea > QTabBar::tab:first:selected {
@@ -235,6 +236,7 @@ QMdiArea > QTabBar::tab:first:selected {
 	padding-left: 9px;
 	color: QPalette.ButtonText(l: 0.96);
 	background-color: QPalette.Window;
+	background-image: url();
 }
 
 QMdiArea > QTabBar::tab:last:selected {
@@ -246,6 +248,7 @@ QMdiArea > QTabBar::tab:last:selected {
 	padding-right: 9px;
 	color: QPalette.ButtonText(l: 0.96);
 	background-color: QPalette.Window;
+	background-image: url();
 }
 
 QMdiArea > QTabBar::tab:first {
