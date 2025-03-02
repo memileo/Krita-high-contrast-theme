@@ -391,7 +391,8 @@ QPushButton {
 	padding-bottom: 3px;
 	padding-top: 1px;
 	background-color: rgb(94, 94, 94);
-	min-width: 20px;
+	/*min-width: 20px;*/
+	min-width: 36px;
 }
 
 QPushButton#showScratchpadButton, QPushButton#showPresetsButton, QWidget#WdgCurveOption2 QPushButton {
@@ -475,9 +476,9 @@ WdgDlgBundleManager QPushButton#bnNew {
 
 
 /* Windows - fix cancel button cutoff on new image from clipboard dialog */
-/*KisImageFromClipboardWidget QDialogButtonBox#newDialogConfirmationButtonBox .QPushButton {
+KisImageFromClipboardWidget QDialogButtonBox#newDialogConfirmationButtonBox .QPushButton {
 	min-width: 36px;
-}*/
+}
 
 /* -----------------------------------
 	Toolbar
@@ -1163,10 +1164,10 @@ QGroupBox, QDockWidget .QGroupBox {
     border-radius: 4px;
 
 	/* Windows */
-/*    margin-top: 10ex; */
+    margin-top: 10ex; 
 
 	/* macOS, Linux */
-    margin-top: 4ex;
+    /*margin-top: 4ex;*/
 
 	margin-bottom: 4px;
 	margin-left: 8px;
@@ -1335,8 +1336,8 @@ PresetDockerDock QFrame#KisPopupButtonFrame, KisPaintOpPresetsChooserPopup QFram
 /*QDockWidget#KisLayerBox QMenu KisColorLabelSelectorWidgetMenuWrapper, QDockWidget#KisLayerBox QMenu KisColorLabelSelectorWidget {
 	max-height: 32px;
 	padding: 3px;
-}
-*/
+}*/
+
 QMenu::item {
 	padding-left: 12px;
 	padding-right: 12px;
