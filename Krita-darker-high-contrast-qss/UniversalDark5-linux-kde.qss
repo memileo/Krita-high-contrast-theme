@@ -320,7 +320,7 @@ KoGroupButton::checked {
 }
 
 KisPaintOpPresetsEditor QToolButton {
-	border-color: QPalette.ButtonText(l: 0.78);
+	border-color: QPalette.ButtonText(l: 0.78, a:0);
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 2px;
@@ -333,13 +333,13 @@ KisPaintOpPresetsEditor QToolButton {
 }
 
 KisPaintOpPresetsEditor QToolButton:hover {
-	border-color: QPalette.ButtonText(l: 0.89);
+	border-color: QPalette.Highlight(l: 1.2, s: 1.4);
 	color: QPalette.ButtonText(l: 1.09);
 }
 
 KisPaintOpPresetsEditor QToolButton:pressed {
-	background-color: QPalette.Button(l: 2.09);
-	border-color: QPalette.ButtonText(l: 1.09);
+	background-color: QPalette.Highlight(l: 0.80, s: 1.8);
+	border-color: QPalette.Highlight(l: 1.2, s: 1.4);
 }
 
 /* -----------------------------------
@@ -631,7 +631,7 @@ QToolBar KisWidgetChooser QToolButton:hover {
 
 QToolBar KisWidgetChooser QToolButton:pressed {
 	background-color: QPalette.Highlight(l: 0.80, s: 1.8);
-	border-color: QPalette.ButtonText(l: 0.74);
+	border-color: QPalette.Highlight(l: 1.2, s: 1.4);
 }
 
 QToolBar QToolButton:pressed {
@@ -688,7 +688,7 @@ PresetDockerDock QToolButton:hover, LayerBox QToolButton:hover, PaletteDockerDoc
 
 PresetDockerDock QToolButton:pressed, LayerBox QToolButton:pressed, PaletteDockerDock QToolButton:pressed, KisAnimTimelineDocker .QToolButton:pressed, KisAnimCurvesDocker .QToolButton:pressed, ArrangeDockerDock QToolButton:pressed, CompositionDockerDock QToolButton:pressed, PatternDockerDock QToolButton:pressed, PaletteGenerator QToolButton:pressed, LogDockerDock QToolButton:pressed, PluginDevToolsDialog QToolButton:pressed, PluginDevToolsDocker QToolButton:pressed, OverviewDockerDock QToolButton:pressed, shapesAndLayersSelectionArrangeDocker QToolButton:pressed, SnapshotDocker QToolButton:pressed, StoryboardDockerDock QToolButton:pressed, SvgSymbolCollectionDocker QToolButton:pressed, LutDockerDock QToolButton:pressed, TasksetDockerDock QToolButton:pressed, KisWelcomePageWidget QToolButton:pressed, KoToolDocker QToolButton:pressed, ntWidgetPad QToolButton:pressed, KisColorSelectorNgDock QToolButton:pressed, comics_project_manager_docker QToolButton:pressed, WGColorSelectorDock QToolButton:pressed, QToolButton#chkUsePercentage:pressed, QToolButton#btnShowHide:pressed, GamutMaskDock QToolButton:pressed, UIKanvasBuddy QToolButton:pressed, KisGenericGradientEditor QToolButton:pressed, KisPaintOpPresetsChooserPopup QToolButton:pressed {
 	background-color: QPalette.Highlight(l: 0.80, s: 1.8);
-	border-color: QPalette.Highlight(l: 1.09, s:1.4);
+	border-color: QPalette.Highlight(l: 1.2, s: 1.4);
 }
 
 LayerBox QToolButton {
@@ -726,8 +726,8 @@ QDockWidget KisPopupButton:pressed {
 
 
 KisCanvasController QToolButton {
-	background-color: QPalette.Button(l: 2.09);
-	border-color: QPalette.ButtonText(l: 0.78);
+	background-color: QPalette.Button(l: 1.8);
+	border: 1px solid QPalette.Button(l: 2.8);
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 2px;
@@ -740,13 +740,14 @@ KisCanvasController QToolButton {
 }
 
 KisCanvasController QToolButton:hover {
-	border-color: QPalette.ButtonText(l: 1.00);
+	background-color: QPalette.Highlight(l: 0.86);
+	border-color: QPalette.Highlight(l: 1.2, s: 1.4);
 	color: QPalette.ButtonText(l: 1.09);
 }
 
 KisCanvasController QToolButton:pressed {
 	background-color: QPalette.Highlight(l: 0.92, s: 1.8);
-	border-color: QPalette.ButtonText(l: 0.74);
+	border-color: QPalette.Highlight(l: 1.2, s: 1.4);
 }
 
 KisZoomButton {
