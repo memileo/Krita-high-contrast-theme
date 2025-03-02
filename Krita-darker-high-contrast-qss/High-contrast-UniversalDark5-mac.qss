@@ -402,7 +402,8 @@ QPushButton {
 	padding-bottom: 3px;
 	padding-top: 1px;
 	background-color: QPalette.Button(l: 1.80);
-	min-width: 20px;
+	/*min-width: 20px;*/
+	min-width: 36px;
 }
 
 QPushButton#showScratchpadButton, QPushButton#showPresetsButton, QWidget#WdgCurveOption2 QPushButton {
@@ -1181,6 +1182,49 @@ KoToolBoxButton#PanTool {
 	qproperty-icon: url(stylesheet:images/tools/dark_tool_pan.svg).QPalette.ButtonText;
 }*/
 
+
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Tool sections background */
+/*
+KoToolBoxDocker QWidget#main, KoToolBoxDocker QWidget#0\\20Krita\/Shape, KoToolBoxDocker QWidget#2\\20Krita\/Transform, KoToolBoxDocker QWidget#3\\20Krita\/Fill, KoToolBoxDocker QWidget#4\\20Krita\/View, KoToolBoxDocker QWidget#5\\20Krita\/Select, KoToolBoxDocker QWidget#navigation {
+	border-radius: 4px;
+	margin-left: 1px;
+	margin-right: 2px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+KoToolBoxDocker QWidget#main {
+
+}
+
+KoToolBoxDocker QWidget#0\\20Krita\/Shape {
+	background-color: QPalette.Base;
+}
+
+KoToolBoxDocker QWidget#2\\20Krita\/Transform {
+
+}
+
+KoToolBoxDocker QWidget#3\\20Krita\/Fill {
+	background: qlineargradient(x0:0, y0:1, x1:0, y1:1,
+                stop:1 QPalette.Highlight(h:100 ,l: 0.9, s: 2, a: 0.6),
+            	stop:0 QPalette.Highlight(h:260 ,l: 0.9, s: 2, a: 0.6))
+}
+
+KoToolBoxDocker QWidget#4\\20Krita\/View {
+
+}
+
+KoToolBoxDocker QWidget#5\\20Krita\/Select {
+	border: 1px dot-dot-dash QPalette.Window(l:1.8);
+}
+
+KoToolBoxDocker QWidget#navigation {
+
+}
+*/
 
 /* -----------------------------------
 	ComboBox
