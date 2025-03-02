@@ -391,7 +391,8 @@ QPushButton {
 	padding-bottom: 3px;
 	padding-top: 1px;
 	background-color: rgb(94, 94, 94);
-	min-width: 20px;
+	/*min-width: 20px;*/
+	min-width: 36px;
 }
 
 QPushButton#showScratchpadButton, QPushButton#showPresetsButton, QWidget#WdgCurveOption2 QPushButton {
