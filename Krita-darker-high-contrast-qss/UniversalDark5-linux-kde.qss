@@ -379,7 +379,7 @@ QDialog QTabWidget QStackedWidget QWidget QAbstractScrollArea {
 	border-style: solid;
 	border-radius: 4px;
 	border-width: 1px;
-	border-color: QPalette.Highlight(l:0.86, s:1.4);
+	border-color: QPalette.Highlight(l:1, s:1.4);
 	min-height: 25px;
 	min-width: 25px;
 }
@@ -1850,6 +1850,10 @@ QStackedWidget#recentDocsStackedWidget {
 /*	background-color: QPalette.Base(l: 0.86);*/
 	padding: 8px;
 /*	border: 1px solid QPalette.Button(l: 2.09);*/
+}
+
+QStackedWidget#recentDocsStackedWidget QAbstractScrollArea {
+	background-color: transparent;
 }
 
 QFrame#dropAreaIndicator QWidget#widgetRight {
