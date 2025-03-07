@@ -558,7 +558,7 @@ KisToolBar QToolButton::menu-button {
 }
 
 .QToolButton::menu-button:hover, KisToolButton::menu-button:hover {
-	background-color: QPalette.Highlight(l: 0.86);
+	/*background-color: QPalette.Highlight(l: 0.86);*/
 	border-color: QPalette.Highlight(l: 1.2, s: 1.4);
 }
 
@@ -740,7 +740,7 @@ KisCanvasController QToolButton {
 }
 
 KisCanvasController QToolButton:hover {
-	background-color: QPalette.Highlight(l: 0.86);
+	/*background-color: QPalette.Highlight(l: 0.86);*/
 	border-color: QPalette.Highlight(l: 1.2, s: 1.4);
 	color: QPalette.ButtonText(l: 1.09);
 }
@@ -1265,9 +1265,9 @@ QComboBox::down-arrow {
 }
 
 QComboBox QAbstractItemView {
-	border: 1px solid QPalette.ButtonText(l: 0.78);
+	border: 1px solid QPalette.Window(l: 1.8);
 	color: QPalette.ButtonText(l: 1.09);
-	background-color: QPalette.Base(l: 0.86);
+	background-color: QPalette.Window(l: 0.9);
 	selection-color: QPalette.HighlightedText;
 	selection-background-color: QPalette.Highlight;
 	padding: 4px;
@@ -1436,16 +1436,16 @@ QSlider::groove:horizontal {
 }
 
 QSlider::handle:horizontal {
-    background: QPalette.Button(l: 2.09);
-    border: 1px solid QPalette.ButtonText(l: 0.76);
+    background: QPalette.Button(l: 1.1);
+    border: 1px solid QPalette.Button(l: 2.8);
     width: 14px;
     margin: -6px 0;
     border-radius: 8px;
 }
 
 QSlider::handle:horizontal:hover {
-    background: QPalette.Button(l: 2.09);
-    border: 1px solid QPalette.ButtonText(l: 1.09);
+    background: QPalette.Button(l: 1.1);
+    border: 1px solid QPalette.Highlight(l: 1.4, s: 1.6);
     width: 14px;
     margin: -6px 0;
     border-radius: 8px;
@@ -1453,26 +1453,26 @@ QSlider::handle:horizontal:hover {
 
 QSlider::handle:horizontal:pressed {
     background: QPalette.Highlight(l: 0.97);
-    border: 1px solid QPalette.ButtonText(l: 1.09);
+    border: 1px solid QPalette.Highlight(l: 1.4, s: 1.6);
     width: 14px;
     margin: -6px 0;
     border-radius: 8px;
 }
 
 QSlider::add-page:horizontal {
-    background: QPalette.ToolTipBase(l: 1.85);
-	height: 4px;
-	border: 0px;
-	border-radius: 2px;
-	margin: 2px 2px;;
+    background: QPalette.Button(l: 1.8);
+	height: 6px;
+	border: 1px solid QPalette.Button(l: 2.2);
+	border-radius: 3px;
+	margin: 1px 1px;;
 }
 
 QSlider::sub-page:horizontal {
-    background: QPalette.ButtonText(l: 0.89);
-	height: 4px;
-	border: 0px;
-	border-radius: 2px;
-	margin: 2px 2px;;
+    background: QPalette.Highlight(l: 0.8);
+	height: 6px;
+	border: 1px solid QPalette.Highlight(l: 1);
+	border-radius: 3px;
+	margin: 1px 1px;;
 }
 
 /* -----------------------------------
@@ -1709,23 +1709,23 @@ KisTagFilterWidget QLineEdit:focus {
 */
 
 QMenu {
-	border: 1px solid QPalette.ButtonText(l: 0.78);
+	border: 1px solid QPalette.Window(l: 1.8);
 	/*border-radius: 2px;*/  /* korners */
 	padding: 4px;
-	background-color: QPalette.Base(l: 0.86);
+	background-color: QPalette.Window(l: 0.9);
 	margin: 0px;
 	color: QPalette.ButtonText(l: 1.09);
 }
 
 QFrame#KisPopupButtonFrame > QMenu {
 	border: 0;
-	background-color: QPalette.Base(l: 0.86);
+	background-color: QPalette.Window(l: 0.9);
 	padding: 0px;
 	margin: 0px;
 }
 
 PresetDockerDock QFrame#KisPopupButtonFrame, KisPaintOpPresetsChooserPopup QFrame#KisPopupButtonFrame {
-	background-color: QPalette.Base(l: 0.86);
+	background-color: QPalette.Window(l: 0.9);
 	padding: 0px;
 	margin: 0px;
 }
@@ -1779,7 +1779,7 @@ QMenu::item:selected {
 
 QMenu::separator {
     height: 1px;
-    background: QPalette.ToolTipBase(l: 1.14);
+    background: QPalette.Window(l: 1.8);
     margin-left: 12px;
     margin-right: 12px;
 	margin-top: 4px;
@@ -1797,8 +1797,8 @@ KisCompositeOpComboBox QWidget * , KisTagChooserWidget QWidget * {
 }
 
 KisCompositeOpComboBox KisCategorizedListView {
-	border: 1px solid QPalette.ButtonText(l: 0.78);
-	background-color: QPalette.Base(l: 0.86);
+	border: 1px solid QPalette.Window(l: 1.8);
+	background-color: QPalette.Window(l: 0.9);
 	padding-left: 4px;
 	padding-right: 4px;
 	padding-top: 4px;
