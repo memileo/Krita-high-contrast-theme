@@ -1,4 +1,4 @@
-Stylesheets and color themes for Krita.
+Stylesheets and color themes for Krita. <br>
 The ones with UniversalDark in the name requires this fork of the Stylesheet Loader plugin:
 https://github.com/memileo/style-sheet-loader-extension-ColorModifier
 
