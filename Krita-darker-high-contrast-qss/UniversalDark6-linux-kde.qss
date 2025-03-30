@@ -111,7 +111,7 @@ QTabBar {
 }
 
 QTabWidget::pane {
-    border: 1px solid QPalette.ToolTipBase(l: 1.12);
+    border: 1px solid QPalette.Button(l: 2);
 	border-radius: 2px;
     position: absolute;
     top: -16px;
@@ -405,7 +405,7 @@ KisZoomableScrollBar {
 */
 
 QPushButton {
-	border: 1px solid QPalette.ToolTipBase(l: 1.12);
+	border: 1px solid QPalette.Button(l: 2);
 	border-radius: 2px;
 	color: QPalette.ButtonText;
 	padding-left: 16px;
@@ -1550,7 +1550,7 @@ QCheckBox::indicator:indeterminate:pressed, QGroupBox::indicator:indeterminate:p
 
 QGroupBox, QDockWidget .QGroupBox {
     background-color: QPalette.Window(l: 0.95);
-    border: 1px solid QPalette.ToolTipBase(l: 1.12);
+    border: 1px solid QPalette.Button(l: 2);
     border-radius: 2px;
 
 	/* Windows */
